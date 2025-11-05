@@ -7,7 +7,6 @@ print(df['log.level'].unique())
 print(df['kubernetes.node.name'].unique())
 
 class Processor:
-  # Initializing the clas with the file
   def __init__(self, file):
     self.file = file
     try:
