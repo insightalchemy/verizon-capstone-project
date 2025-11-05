@@ -48,12 +48,10 @@ class Processor:
         node_time_diffs[node] = time_diffs
     return node_time_diffs
 
-  # Converting output to json
   def convert_to_json(self):
     json_data = self.df.to_json(orient = "records")
     return json_data
 
-  # Saving file to csv format
   def save_to_csv(self, output_file):
     self.df.to_csv(output_file, index = False)
 
